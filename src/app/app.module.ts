@@ -15,12 +15,18 @@ import { HomeComponent } from './home/home.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { CardComponent } from './card/card.component';
+import { ServicosComponent } from './servicos/servicos.component';
+import { ProdutosComponent } from './produtos/produtos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavegacaoComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent,
+    ServicosComponent,
+    ProdutosComponent
   ],
   imports: [
     BrowserModule,
