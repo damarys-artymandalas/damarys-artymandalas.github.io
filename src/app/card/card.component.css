@@ -15,6 +15,7 @@
  
  
  .dashboard-card-content {
+    opacity: 0;
     text-align: center;
     flex-grow: 1;
     display: flex;
@@ -43,3 +44,17 @@
    border-radius: 50%;
    align-items: flex flex-start;
  }
+
+ /* <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions> */
+
+  mat-card-actions{
+     align-items: baseline;
+  }
+
+  dashboard-card.iframe{
+   opacity: unset;
+   background: black;
+  }

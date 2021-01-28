@@ -40,7 +40,7 @@ import { ProdutosComponent } from './produtos/produtos.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
