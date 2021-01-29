@@ -27,10 +27,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.servicos = [];
     this.servicos.push(this.ObterCardContato());
-    this.servicos.push(this.ObterCardTarot());
-    this.servicos.push(this.ObterCardConstelacao());
+    this.servicos.push(this.ObterCardServicos());
     this.servicos.push(this.ObterCardYouTube());
-    this.servicos.push(new Card('Cromoterapia', '', '', 'Terapia das cores'));
 
     this.breakpointObserver.observe([
       Breakpoints.XSmall,
@@ -77,23 +75,21 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  ObterCardTarot(){
-    return new Card("Tarot","Desvendando o Inconciente...",'./../assets/imagens/tarot.jpeg',
-    `<p>Venha projetar seu <b>inconsciente</b> para analisar e interagir com o seu rico <b>mundo interior</b>.</p> Fazendo isso através das cartas...`
-    );
-  }
-
-  ObterCardConstelacao(){
-    return new Card("Constelação Familiar","Observando os sistemas...",'./../assets/imagens/constelacao.jpeg',
-    `<p>Pressão, culpa, sem motivação, aflição por nada? </p>
-     <p>Muitas vezes assumimos posições que não são nossas, e isso causa desequilibrio em todo sistema. Com a constelação, podemos identificar estes pontos...</p>`
+  ObterCardServicos(){
+    return new Card("Mapa Astral, Tarot, Constelação","Desvendando o Inconciente...",'./../assets/imagens/tarot.jpeg',
+    `<p>Venha projetar seu <b>inconsciente</b> para analisar e interagir com o seu rico <b>mundo interior</b>. Definindo posições, hierarquias afim de ter uma vida próspera e equilibrada,
+    baseando na sua pessoa <b>única</b> que você é!</p> 
+    Fazendo isso através das cartas, constelações familiar, individual, Mapa Astral, etc...`
     );
   }
 
   ObterCardYouTube(){
-    return new Card("YouTube","Observando os sistemas...",'./../assets/imagens/constelacao.jpeg',
-    `<iframe width="50" height="30" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>`
+    return new Card("Produtos","Arte feita com muito amor e luz! Entregas para todo Brasil",'./../assets/imagens/mandala_saojorge.png',
+    `<li>Mandalas</li>
+    <li>Japamalas</li>
+    <li>Colares</li>
+    <li>Conjuntos</li>
+    `
     );
   }
 }
