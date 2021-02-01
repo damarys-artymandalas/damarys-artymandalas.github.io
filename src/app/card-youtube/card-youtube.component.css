@@ -1,0 +1,39 @@
+ .dashboard-card {
+    position: absolute;
+    opacity: 0.96;
+   }
+ 
+ 
+ .dashboard-card-content {
+    opacity: 0;
+    text-align: center;
+    flex-direction: column;
+    max-height: 100%;
+ }
+ 
+ mat-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+ }
+ 
+ mat-card-content{
+     height: 91%;
+ }
+ mat-card-header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .mat-card-avatar {
+   height: 60px;
+   width: 60px; 
+   border-radius: 50%;
+   align-items: flex flex-start;
+ }
+
+ iframe{
+     height: 100%;
+ }

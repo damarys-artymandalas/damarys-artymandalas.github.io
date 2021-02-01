@@ -1,20 +1,19 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+  selector: 'app-card-youtube',
+  templateUrl: './card-youtube.component.html',
+  styleUrls: ['./card-youtube.component.css']
 })
-
-export class CardComponent implements OnInit {
+export class CardYoutubeComponent implements OnInit {
   @Input() titulo: string;
   @Input() subtitulo: string;
   @Input() imagem: string;
   @Input() descricao: string;
   constructor() { }
 
-  ngOnInit(): void { }
-
+  ngOnInit(): void {
+  }
   SubtituloExist(): boolean {
     if (this.subtitulo == undefined || this.subtitulo == null || this.subtitulo == '') {
       return false;
@@ -26,7 +25,7 @@ export class CardComponent implements OnInit {
     return true;
   }
 
-  ImagemExists(): boolean{
+  ImagemExists(): boolean {
     if (this.imagem == undefined || this.imagem == null || this.imagem == '') {
       return false;
     }

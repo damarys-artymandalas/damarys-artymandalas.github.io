@@ -10,7 +10,7 @@ import { Card } from '../entidades/Card.Entidade';
 })
 export class HomeComponent implements OnInit {
 
-  servicos: Card[];
+  miniCards: Card[];
   cardLayout: {
     columns: number,
     miniCard: { cols: number, rows: number },
@@ -25,10 +25,10 @@ export class HomeComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
-    this.servicos = [];
-    this.servicos.push(this.ObterCardContato());
-    this.servicos.push(this.ObterCardServicos());
-    this.servicos.push(this.ObterCardYouTube());
+    this.miniCards = [];
+    this.miniCards.push(this.ObterCardContato());
+    this.miniCards.push(this.ObterCardServicos());
+    this.miniCards.push(this.ObterCardYouTube());
 
     this.breakpointObserver.observe([
       Breakpoints.XSmall,
@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
           columns: 1,
           miniCard: { cols: 1, rows: 1 },
           chart: { cols: 1, rows: 1 },
-          table: { cols: 1, rows: 3 },
+          table: { cols: 1, rows: 6 },
         };
       }
       else if (state.breakpoints[Breakpoints.Medium]) {
@@ -50,7 +50,7 @@ export class HomeComponent implements OnInit {
           columns: 4,
           miniCard: { cols: 2, rows: 1 },
           chart: { cols: 4, rows: 1 },
-          table: { cols: 4, rows: 3 },
+          table: { cols: 4, rows: 6 },
         };
       }
       else { // (state.breakpoints[Breakpoints.XLarge] || state.breakpoints[Breakpoints.Large]) {
@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
           columns: 3,
           miniCard: { cols: 1, rows: 1 },
           chart: { cols: 1, rows: 1 },
-          table: { cols: 3, rows: 3 },
+          table: { cols: 3, rows: 6 },
         };
       }
     });

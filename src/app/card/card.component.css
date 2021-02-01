@@ -53,8 +53,3 @@
   mat-card-actions{
      align-items: baseline;
   }
-
-  dashboard-card.iframe{
-   opacity: unset;
-   background: black;
-  }

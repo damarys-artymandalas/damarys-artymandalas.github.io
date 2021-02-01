@@ -18,6 +18,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { CardComponent } from './card/card.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { ProdutosComponent } from './produtos/produtos.component';
+import { CardYoutubeComponent } from './card-youtube/card-youtube.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProdutosComponent } from './produtos/produtos.component';
     HomeComponent,
     CardComponent,
     ServicosComponent,
-    ProdutosComponent
+    ProdutosComponent,
+    CardYoutubeComponent
   ],
   imports: [
     BrowserModule,

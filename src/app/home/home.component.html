@@ -9,7 +9,7 @@
     </mat-grid-tile> -->
 
     <!--Charts-->
-    <mat-grid-tile *ngFor="let card of servicos" [colspan]="( cardLayout )?.chart.cols"
+    <mat-grid-tile *ngFor="let card of miniCards" [colspan]="( cardLayout )?.chart.cols"
       [rowspan]="( cardLayout )?.chart.rows">
       <app-card [titulo]="card.Titulo" [subtitulo]="card.SubTitulo" [imagem]="card.Imagem" [descricao]="card.Descricao">
         <div>Chart Content Here</div>
@@ -18,9 +18,10 @@
 
     <!--Table-->
     <mat-grid-tile [colspan]="( cardLayout  )?.table.cols" [rowspan]="( cardLayout  )?.table.rows">
-      
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UKpWUtUFp8o">
-      </iframe>
+      <app-card-youtube [titulo]="" [subtitulo]="" [imagem]="" [descricao]="">
+        
+        <div>Chart Content Here</div>
+      </app-card-youtube>
     </mat-grid-tile>
 
   </mat-grid-list>

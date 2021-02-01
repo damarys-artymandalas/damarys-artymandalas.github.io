@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -8,8 +8,8 @@ import { map, shareReplay } from 'rxjs/operators';
   templateUrl: './navegacao.component.html',
   styleUrls: ['./navegacao.component.css']
 })
-export class NavegacaoComponent {
-  
+export class NavegacaoComponent implements OnInit{
+  head: string = "";
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
@@ -17,5 +17,11 @@ export class NavegacaoComponent {
     );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
+  ngOnInit(): void {
+    this.head = "Seja bem vindo!";
+  }
 
+  AtualizaCabecalho(valor: string){
+    this.head = valor;
+  }
 }
