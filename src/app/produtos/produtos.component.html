@@ -1,21 +1,21 @@
 <div class="grid-container">
-    <mat-grid-list cols="{{ ( cardLayout | async )?.columns }}" rowHeight="200px">
+    <mat-grid-list cols="{{ ( cardLayout )?.columns }}" rowHeight="200px">
       <!--Table-->
-      <mat-grid-tile [colspan]="( cardLayout | async )?.table.cols" [rowspan]="( cardLayout | async )?.table.rows">
+      <mat-grid-tile [colspan]="( cardLayout )?.table.cols" [rowspan]="( cardLayout  )?.table.rows">
         <app-card title="Card 9">
           <div>Table Content Here</div>
         </app-card>
       </mat-grid-tile>
       <!--Mini Cards-->
-      <mat-grid-tile *ngFor="let i of [1, 2, 3, 4]" [colspan]="( cardLayout | async )?.miniCard.cols"
-        [rowspan]="( cardLayout | async )?.miniCard.rows">
+      <mat-grid-tile *ngFor="let i of [1, 2, 3, 4]" [colspan]="( cardLayout  )?.miniCard.cols"
+        [rowspan]="( cardLayout )?.miniCard.rows">
         <app-card title="Card {{i}}">
           <div>Mini Card Content Here</div>
         </app-card>
       </mat-grid-tile>
       <!--Charts-->
-      <mat-grid-tile *ngFor="let i of [5, 6, 7, 8]" [colspan]="( cardLayout | async )?.chart.cols"
-        [rowspan]="( cardLayout | async )?.chart.rows">
+      <mat-grid-tile *ngFor="let i of [5, 6, 7, 8]" [colspan]="( cardLayout )?.chart.cols"
+        [rowspan]="( cardLayout )?.chart.rows">
         <app-card title="Card {{i}}">
           <div>Chart Content Here</div>
         </app-card>

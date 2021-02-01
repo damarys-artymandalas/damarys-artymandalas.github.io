@@ -71,6 +71,7 @@ export class HomeComponent implements OnInit {
      WhatsApp: <a style='color: #FFFFFF' target="_blank" href="https://api.whatsapp.com/send?phone=5562992188233&text=Ol%C3%A1,%20atrav%C3%A9s%20do%20site%20Damarys-Artymandalas%20encontrei%20seu%20contato.%20Pode%20me%20ajudar?">(62) 99218-8233</a> <br>  
      &nbsp;Instagram: <a style='color: #FFFFFF' target="_blank" href="https://www.instagram.com/damarys_artymandalas/"> @damarys_artymandalas</a><br>
      &nbsp;&nbsp;YoutTube: <a style='color: #FFFFFF' target="_blank" href="https://www.youtube.com/user/Damaris8648"> Damarys C. Reges</a><br>
+     &nbsp;&nbsp;Telegram: <a style='color: #FFFFFF' target="_blank" href="https://t.me/joinchat/HJzs4lbcTA5gHpSX"> Astro Day</a><br>
     `
     );
   }

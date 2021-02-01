@@ -1,12 +1,5 @@
 <div class="grid-container">
   <mat-grid-list cols="{{ ( cardLayout )?.columns }}" rowHeight="250px">
-    <!--Mini Cards-->
-    <!-- <mat-grid-tile *ngFor="let card of servicos" [colspan]="( cardLayout  )?.miniCard.cols"
-      [rowspan]="( cardLayout  )?.miniCard.rows">
-      <app-card [titulo]="card.Titulo" [subtitulo]="card.SubTitulo" [imagem]="card.Imagem" [descricao]="card.Descricao">
-        <div>Mini Card Content Here</div>
-      </app-card>
-    </mat-grid-tile> -->
 
     <!--Charts-->
     <mat-grid-tile *ngFor="let card of miniCards" [colspan]="( cardLayout )?.chart.cols"
@@ -18,7 +11,7 @@
 
     <!--Table-->
     <mat-grid-tile [colspan]="( cardLayout  )?.table.cols" [rowspan]="( cardLayout  )?.table.rows">
-      <app-card-youtube [titulo]="" [subtitulo]="" [imagem]="" [descricao]="">
+      <app-card-youtube [titulo]="'Astrologia em forma de Arte'" [subtitulo]="'#Dinheiro #OSegredo'" [imagem]="" [descricao]="">
         
         <div>Chart Content Here</div>
       </app-card-youtube>
