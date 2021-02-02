@@ -19,6 +19,12 @@ import { CardComponent } from './card/card.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { CardYoutubeComponent } from './card-youtube/card-youtube.component';
+import { GalleryModule } from 'ng-gallery';
+import { ColarComponent } from './produtos/colar/colar.component';
+import { ConjuntosComponent } from './produtos/conjuntos/conjuntos.component';
+import { JapamalaComponent } from './produtos/japamala/japamala.component';
+import { MandalasComponent } from './produtos/mandalas/mandalas.component';
+import { PulseirasComponent } from './produtos/pulseiras/pulseiras.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,12 @@ import { CardYoutubeComponent } from './card-youtube/card-youtube.component';
     CardComponent,
     ServicosComponent,
     ProdutosComponent,
-    CardYoutubeComponent
+    CardYoutubeComponent,
+    ColarComponent,
+    ConjuntosComponent,
+    JapamalaComponent,
+    MandalasComponent,
+    PulseirasComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +54,7 @@ import { CardYoutubeComponent } from './card-youtube/card-youtube.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    GalleryModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
