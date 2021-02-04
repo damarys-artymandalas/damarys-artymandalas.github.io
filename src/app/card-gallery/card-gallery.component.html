@@ -1,14 +1,3 @@
-<!-- <mat-card class="dashboard-card">
-    <mat-card-header>
-        <mat-card-title title="{{title}}">
-            {{title}}
-        </mat-card-title>
-    </mat-card-header>
-    <mat-card-content class="dashboard-card-content">
-        <div>Ok</div>
-    </mat-card-content>
-</mat-card> -->
-
 <mat-card class="dashboard-card">
     <mat-card-header>
         <div id="avatar" *ngIf="ImagemExists()">
@@ -20,8 +9,7 @@
     </mat-card-header>
 
     <mat-card-content>
-        <iframe width="100%" [src]='SafeUrl'>
-        </iframe>
+        <gallery [items]="images"></gallery>
     </mat-card-content>
 
 </mat-card>

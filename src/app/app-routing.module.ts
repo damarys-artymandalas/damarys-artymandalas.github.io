@@ -7,7 +7,10 @@ import { JapamalaComponent } from './produtos/japamala/japamala.component';
 import { MandalasComponent } from './produtos/mandalas/mandalas.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { PulseirasComponent } from './produtos/pulseiras/pulseiras.component';
+import { ConstelacaoComponent } from './servicos/constelacao/constelacao.component';
+import { MapaastralComponent } from './servicos/mapaastral/mapaastral.component';
 import { ServicosComponent } from './servicos/servicos.component';
+import { TarotComponent } from './servicos/tarot/tarot.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -19,6 +22,9 @@ const routes: Routes = [
   {path:'produtos/japamala', component:JapamalaComponent},
   {path:'produtos/mandala', component:MandalasComponent},
   {path:'produtos/pulseira', component:PulseirasComponent},
+  {path:'servicos/mapaastral', component:MapaastralComponent},
+  {path:'servicos/constelacao', component:ConstelacaoComponent},
+  {path:'servicos/tarot', component:TarotComponent},
 ];
 
 @NgModule({

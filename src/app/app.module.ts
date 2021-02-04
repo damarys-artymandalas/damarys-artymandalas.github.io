@@ -25,6 +25,10 @@ import { ConjuntosComponent } from './produtos/conjuntos/conjuntos.component';
 import { JapamalaComponent } from './produtos/japamala/japamala.component';
 import { MandalasComponent } from './produtos/mandalas/mandalas.component';
 import { PulseirasComponent } from './produtos/pulseiras/pulseiras.component';
+import { MapaastralComponent } from './servicos/mapaastral/mapaastral.component';
+import { TarotComponent } from './servicos/tarot/tarot.component';
+import { ConstelacaoComponent } from './servicos/constelacao/constelacao.component';
+import { CardGalleryComponent } from './card-gallery/card-gallery.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { PulseirasComponent } from './produtos/pulseiras/pulseiras.component';
     ConjuntosComponent,
     JapamalaComponent,
     MandalasComponent,
-    PulseirasComponent
+    PulseirasComponent,
+    MapaastralComponent,
+    TarotComponent,
+    ConstelacaoComponent,
+    CardGalleryComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Card } from '../entidades/Card.Entidade';
+import { MiniCard } from '../entidades/Card.Mini.Entidade';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ import { Card } from '../entidades/Card.Entidade';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
-
+  urlYoutube: string = 'https://www.youtube.com/embed/UKpWUtUFp8o';
   miniCards: Card[];
   cardLayout: {
     columns: number,
@@ -26,9 +27,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.miniCards = [];
-    this.miniCards.push(this.ObterCardContato());
-    this.miniCards.push(this.ObterCardServicos());
-    this.miniCards.push(this.ObterCardYouTube());
+    this.miniCards.push(MiniCard.ObterCardContato());
+    this.miniCards.push(MiniCard.ObterCardServicos());
+    this.miniCards.push(MiniCard.ObterCardProdutos());
 
     this.breakpointObserver.observe([
       Breakpoints.XSmall,
@@ -63,34 +64,5 @@ export class HomeComponent implements OnInit {
       }
     });
 
-  }
-
-  ObterCardContato(){
-    return new Card('Entre em Contato, Tire Dúvidas e Agende!', 'Contatos:', './../assets/imagens/damarys1.jpg', 
-    `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: damarisc.reges@gmail.com<br>
-     WhatsApp: <a style='color: #FFFFFF' target="_blank" href="https://api.whatsapp.com/send?phone=5562992188233&text=Ol%C3%A1,%20atrav%C3%A9s%20do%20site%20Damarys-Artymandalas%20encontrei%20seu%20contato.%20Pode%20me%20ajudar?">(62) 99218-8233</a> <br>  
-     &nbsp;Instagram: <a style='color: #FFFFFF' target="_blank" href="https://www.instagram.com/damarys_artymandalas/"> @damarys_artymandalas</a><br>
-     &nbsp;&nbsp;YoutTube: <a style='color: #FFFFFF' target="_blank" href="https://www.youtube.com/user/Damaris8648"> Damarys C. Reges</a><br>
-     &nbsp;&nbsp;Telegram: <a style='color: #FFFFFF' target="_blank" href="https://t.me/joinchat/HJzs4lbcTA5gHpSX"> Astro Day</a><br>
-    `
-    );
-  }
-
-  ObterCardServicos(){
-    return new Card("Mapa Astral, Tarot, Constelação","Desvendando o Inconciente...",'./../assets/imagens/tarot.jpeg',
-    `<p>Venha projetar seu <b>inconsciente</b> para analisar e interagir com o seu rico <b>mundo interior</b>. Definindo posições, hierarquias afim de ter uma vida próspera e equilibrada,
-    baseando na sua pessoa <b>única</b> que você é!</p> 
-    Fazendo isso através das cartas, constelações familiar, individual, Mapa Astral, etc...`
-    );
-  }
-
-  ObterCardYouTube(){
-    return new Card("Produtos","Arte feita com muito amor e luz! Entregas para todo Brasil",'./../assets/imagens/mandala_saojorge.png',
-    `<li>Mandalas</li>
-    <li>Japamalas</li>
-    <li>Colares</li>
-    <li>Conjuntos</li>
-    `
-    );
   }
 }

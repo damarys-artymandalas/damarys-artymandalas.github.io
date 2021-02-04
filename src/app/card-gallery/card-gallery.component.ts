@@ -1,28 +1,21 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { GalleryItem } from 'ng-gallery';
 
 @Component({
-  selector: 'app-card-youtube',
-  templateUrl: './card-youtube.component.html',
-  styleUrls: ['./card-youtube.component.css']
+  selector: 'app-card-gallery',
+  templateUrl: './card-gallery.component.html',
+  styleUrls: ['./card-gallery.component.css']
 })
-export class CardYoutubeComponent implements OnInit {
+export class CardGalleryComponent implements OnInit {
+  @Input() images: GalleryItem[];
   @Input() titulo: string;
   @Input() subtitulo: string;
   @Input() imagem: string;
   @Input() descricao: string;
-  @Input() url: string;
-
-  public SafeUrl: SafeUrl;
-  private sanitizer: DomSanitizer
-  constructor(sanitizer: DomSanitizer) {
-    this.sanitizer = sanitizer;
-  }
+  constructor() { }
 
   ngOnInit(): void {
-    this.SafeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
   }
-
   SubtituloExist(): boolean {
     if (this.subtitulo == undefined || this.subtitulo == null || this.subtitulo == '') {
       return false;
