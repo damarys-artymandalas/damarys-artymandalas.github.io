@@ -4,17 +4,17 @@
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item [routerLink]="'home'" (click)='AtualizaCabecalho("Home")'>Home</a>
-      
-      <a mat-list-item [matMenuTriggerFor]="menuServicos" >
+
+      <a mat-list-item [matMenuTriggerFor]="menuServicos">
         <mat-icon>menu_open</mat-icon>Serviços
       </a>
       <mat-menu #menuServicos="matMenu" xPosition="after">
-        <button mat-menu-item [routerLink]="'servicos/constelacao'"
-          (click)='AtualizaCabecalho("Constelação")'>Constelação</button>
-        <button mat-menu-item [routerLink]="'servicos/tarot'"
-          (click)='AtualizaCabecalho("Tarot")'>Tarot</button>
-        <button mat-menu-item [routerLink]="'servicos/mapaastral'" 
-          (click)='AtualizaCabecalho("Mapa Astral")'>Mapa Astral</button>
+        <button mat-menu-item [routerLink]="'servicos/constelacao'" (click)='AtualizaCabecalho("Constelação")'
+          (click)="drawer.mode === 'over' ? drawer.toggle() : ''">Constelação</button>
+        <button mat-menu-item [routerLink]="'servicos/tarot'" (click)='AtualizaCabecalho("Tarot")'
+          (click)="drawer.mode === 'over' ? drawer.toggle() : ''">Tarot</button>
+        <button mat-menu-item [routerLink]="'servicos/mapaastral'" (click)='AtualizaCabecalho("Mapa Astral")'
+          (click)="drawer.mode === 'over' ? drawer.toggle() : ''">Mapa Astral</button>
       </mat-menu>
 
 
@@ -23,16 +23,16 @@
         <mat-icon>menu_open</mat-icon>Produtos
       </a>
       <mat-menu #afterMenu="matMenu" xPosition="after">
-        <button mat-menu-item [routerLink]="'produtos/mandala'"
-          (click)='AtualizaCabecalho("Mandalas")'>Mandalas</button>
-        <button mat-menu-item [routerLink]="'produtos/japamala'"
-          (click)='AtualizaCabecalho("Japamalas")'>Japamalas</button>
-        <button mat-menu-item [routerLink]="'produtos/colar'" 
-          (click)='AtualizaCabecalho("Colares")'>Colares</button>
-        <button mat-menu-item [routerLink]="'produtos/pulseira'"
-          (click)='AtualizaCabecalho("Pulseiras")'>Pulseiras</button>
-        <button mat-menu-item [routerLink]="'produtos/conjuntos'"
-          (click)='AtualizaCabecalho("Conjuntos")'>Conjuntos</button>
+        <button mat-menu-item [routerLink]="'produtos/mandala'" (click)='AtualizaCabecalho("Mandalas")'
+          (click)="drawer.mode === 'over' ? drawer.toggle() : ''">Mandalas</button>
+        <button mat-menu-item [routerLink]="'produtos/japamala'" (click)='AtualizaCabecalho("Japamalas")'
+          (click)="drawer.mode === 'over' ? drawer.toggle() : ''">Japamalas</button>
+        <button mat-menu-item [routerLink]="'produtos/colar'" (click)='AtualizaCabecalho("Colares")'
+          (click)="drawer.mode === 'over' ? drawer.toggle() : ''">Colares</button>
+        <button mat-menu-item [routerLink]="'produtos/pulseira'" (click)='AtualizaCabecalho("Pulseiras")'
+          (click)="drawer.mode === 'over' ? drawer.toggle() : ''">Pulseiras</button>
+        <button mat-menu-item [routerLink]="'produtos/conjuntos'" (click)='AtualizaCabecalho("Conjuntos")'
+          (click)="drawer.mode === 'over' ? drawer.toggle() : ''">Conjuntos</button>
       </mat-menu>
 
     </mat-nav-list>

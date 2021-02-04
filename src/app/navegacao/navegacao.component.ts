@@ -8,7 +8,7 @@ import { map, shareReplay } from 'rxjs/operators';
   templateUrl: './navegacao.component.html',
   styleUrls: ['./navegacao.component.css']
 })
-export class NavegacaoComponent implements OnInit{
+export class NavegacaoComponent implements OnInit {
   head: string = "";
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -16,12 +16,13 @@ export class NavegacaoComponent implements OnInit{
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver) {  }
+  
   ngOnInit(): void {
     this.head = "Seja bem vindo!";
   }
 
-  AtualizaCabecalho(valor: string){
+  AtualizaCabecalho(valor: string) {
     this.head = valor;
   }
 }
