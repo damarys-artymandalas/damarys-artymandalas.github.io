@@ -15,7 +15,7 @@ export class ConstelacaoComponent implements OnInit {
   images: GalleryItem[];
   miniCards: Card[];
   miniCardContato: Card[];
-  urlYoutube: string = 'https://www.youtube.com/embed/mQBYTF2bOAo';
+  urlYoutube: string = 'https://www.youtube.com/embed/GkN8g2qlues';
   ngOnInit() {
     // Set gallery items array
     this.images = [

@@ -43,4 +43,23 @@ export class MiniCard {
             `<p>Para quem tem vergonha, ou não consegue quantidade de pessoas para realizar o movimento existe a possibilidade de realizar através de bonecos (Playmobil).</p>`
         );
     }
+
+    
+    static ObterCardTaro(): Card {
+        return new Card("Tarot", "pensamentos, palavras e atitudes...", './../assets/imagens/taro.jpg',
+            `<p>"<i>O dedo aponta a lua, o sábio olha a lua, o tolo vê só o dedo.</i>” Provérbio chinês. </p>
+            <p><b>Tarô</b> é um mapa de viagem, um caminho para o <b>autoconhecimento</b>, cujo objetivo é nos inspirar e ajudar a construir 
+           um projeto de vida equilibrado para nós, para os que nos cercam; para a <b>humanidade</b> e para o <b>planeta</b>. 
+           Ao abrir uma leitura de <b>Tarô</b> observamos o que está disponível e o que é percebido por nós, além do que temos 
+           em <b>potencial</b> e ainda não conseguimos perceber. Apura nosso poder inato para promover mudanças de 
+           <b>pensamentos, palavras e atitudes</b></p>`
+        );
+    }
+
+    static LinkTaro(): string{
+        return "https://youtu.be/H7JCj9SlAiU";
+    }
+    static LinkConstelacaoFamiliar(): string{
+        return "https://youtu.be/GkN8g2qlues";
+    }
 }

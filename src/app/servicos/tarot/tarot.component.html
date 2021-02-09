@@ -1,1 +1,22 @@
-<p>tarot works!</p>
+<div class="grid-container">
+    <mat-grid-list cols="{{ ( cardLayout )?.columns }}" rowHeight="250px">
+  
+      <!--Charts-->
+      <mat-grid-tile *ngFor="let card of miniCards" [colspan]="( cardLayout )?.chart.cols"
+        [rowspan]="( cardLayout )?.chart.rows">
+        <app-card [titulo]="card.Titulo" [subtitulo]="card.SubTitulo" [imagem]="card.Imagem" [descricao]="card.Descricao">
+          <div>Chart Content Here</div>
+        </app-card>
+      </mat-grid-tile>
+  
+      <!--Table-->
+      <mat-grid-tile [colspan]="( cardLayout  )?.table.cols" [rowspan]="( cardLayout  )?.table.rows">
+        <app-card-youtube [url]='urlYoutube' [titulo]="'Astrologia em forma de Arte'"
+          [subtitulo]="'#Tarot #OSegredo'" [imagem]="" [descricao]="">
+  
+          <div>Chart Content Here</div>
+        </app-card-youtube>
+      </mat-grid-tile>
+  
+    </mat-grid-list>
+  </div>

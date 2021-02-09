@@ -10,7 +10,7 @@ import { MiniCard } from '../entidades/Card.Mini.Entidade';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
-  urlYoutube: string = 'https://www.youtube.com/embed/UKpWUtUFp8o';
+  urlYoutube: string = 'https://www.youtube.com/embed/H7JCj9SlAiU';
   miniCards: Card[];
   cardLayout: {
     columns: number,
