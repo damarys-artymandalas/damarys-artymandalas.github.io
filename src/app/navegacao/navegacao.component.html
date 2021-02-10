@@ -34,7 +34,18 @@
         <button mat-menu-item [routerLink]="'produtos/conjuntos'" (click)='AtualizaCabecalho("Conjuntos")'
           (click)="drawer.mode === 'over' ? drawer.toggle() : ''">Conjuntos</button>
       </mat-menu>
-
+      
+      <br>
+      <div  align="center">
+        <table width="120" border="1" cellpadding="2" cellspacing="0" bgcolor="white">
+          <tr>
+            <td align="center" nowrap>
+              <a (click)="mostraceu()" title="clique para ver o mapa"><img border="0" height="290" width="112" src="https://www.sadhana.com.br/ceu/ceu1032766.gif">
+              </a><br>
+            </td>
+          </tr>
+        </table>
+      </div>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -49,6 +60,6 @@
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
-
   </mat-sidenav-content>
 </mat-sidenav-container>
+<script language="Javascript" src="https://sadhana.com.br/cgi-local/mapas/ceu.js"></script>

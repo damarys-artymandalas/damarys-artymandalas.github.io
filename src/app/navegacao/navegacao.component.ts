@@ -25,4 +25,17 @@ export class NavegacaoComponent implements OnInit {
   AtualizaCabecalho(valor: string) {
     this.head = valor;
   }
+
+  coloque() {
+    window.open("https://www.sadhana.com.br/ceu.htm","coloque","scrollbars=yes,width=560,height=400");
+  }
+  mostraceu() {
+    let ceuref=document.location.href;
+    let posic = ceuref.indexOf("sadhana.com.br");
+    if (posic > 1) {
+      ceuref="";
+    }
+    ceuref=escape(ceuref);
+    window.open("https://www.sadhana.com.br/cgi-local/mapas/mapanow.cgi?indic=39099&ref="+ceuref,"mapa","scrollbars=yes,width=670,height=530");
+  }
 }
