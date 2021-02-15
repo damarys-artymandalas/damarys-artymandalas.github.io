@@ -32,3 +32,14 @@
 a{
   color: azure;
 }
+
+.fa {  
+  width: 25px;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+  border-radius: 50%; 
+}

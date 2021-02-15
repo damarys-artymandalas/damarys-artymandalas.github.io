@@ -10,7 +10,6 @@
     left: 15px;
     right: 15px;
     bottom: 15px;
-    opacity: 0.8;
    }
  
  
@@ -29,6 +28,7 @@
  mat-card {
     display: flex;
     flex-direction: column;
+    color: aliceblue;
  }
 
  mat-card-header {

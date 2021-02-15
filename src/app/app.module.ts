@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -51,6 +52,7 @@ import { CardGalleryComponent } from './card-gallery/card-gallery.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
@@ -62,7 +64,7 @@ import { CardGalleryComponent } from './card-gallery/card-gallery.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    GalleryModule,
+    GalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
