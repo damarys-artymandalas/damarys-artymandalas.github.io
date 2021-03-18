@@ -43,3 +43,27 @@ a{
   color: white;
   border-radius: 50%; 
 }
+
+.fa-facebook {
+  background: #3B5998;
+}
+
+.fa-google {
+  background: #dd4b39;
+}
+
+.fa-youtube {
+  background: #bb0000;
+}
+.fa-instagram {
+  background: #8a3ab9;
+}
+
+.fa-whatsapp {
+  background: #4FCE5D;
+}
+
+
+.fa-telegram {
+  background: black;
+}
