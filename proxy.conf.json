@@ -1,9 +1,0 @@
-{
-    "/api": {
-      "target": "https://sadhana.com.br/cgi-local/mapas",
-      "secure": true,
-      "changeOrigin": true,
-      "pathRewrite": {
-      }
-    }
-  }
